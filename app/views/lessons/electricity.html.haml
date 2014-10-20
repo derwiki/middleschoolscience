@@ -3,15 +3,13 @@
     .col-xs-12.text-center
       %h1 Electricity
     .col-sm-10.col-sm-offset-1
+      %ul#section-picker
+        - @sections.each do |section|
+          %li= link_to section.titleize, "##{ section }"
+    .col-sm-10.col-sm-offset-1
       .foreward
         These notes and lesson plans are designed to be used for grades 5 – 8.
       - @sections.zip(['selected']).each do |section, selected|
         %div{:class => "section #{selected}", :id => section}
           = render "lessons/electricity/#{section}"
 
-- content_for :toc do
-  %ul#section-picker
-    - @sections.each do |section|
-      %li= link_to section.titleize, "#", :"data-section-id" => section
-    %li
-      %a.showall{:href => "#"} Show All Sections
