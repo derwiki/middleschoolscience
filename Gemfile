@@ -5,10 +5,11 @@ gem 'rails', '4.2.0.beta2'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
-gem 'sqlite3'
 gem 'sass-rails', '~> 5.0.0.beta1'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
+gem 'json'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -26,6 +27,8 @@ group :production do
 end
 
 group :development, :test do
+  gem 'sqlite3'
+
   # Call 'debugger' anywhere in the code to stop execution and get a debugger
   # console
   gem 'byebug'
