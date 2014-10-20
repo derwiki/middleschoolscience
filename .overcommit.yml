@@ -15,6 +15,10 @@
 #
 # Uncomment the following lines to make the configuration take effect.
 
+PreCommit:
+  BundleCheck:
+    enabled: false
+
 #PreCommit:
 #  Rubocop:
 #    on_warn: fail # Treat all warnings as failures
