@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.0.beta2'
+
+gem 'haml-rails'
+gem 'jquery-rails'
+gem 'bootstrap-sass'
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0.0.beta1'
 gem 'uglifier', '>= 1.3.0'
@@ -8,8 +12,6 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem 'jquery-rails', '~> 4.0.0.beta2'
-gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
@@ -18,6 +20,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+
+group :production do
+  gem 'pg'
+end
 
 group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger
@@ -32,4 +38,3 @@ group :development, :test do
   # background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
