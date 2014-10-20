@@ -1,15 +1,20 @@
 .container.lesson
   .row
     .col-xs-12.text-center
-      %h1 Electricity
+      %h1 Matter
+
     .col-sm-10.col-sm-offset-1
       %ul#section-picker
         - @sections.each do |section|
           %li= link_to section.titleize, "##{ section }"
+
     .col-sm-10.col-sm-offset-1
       .foreward
         These notes and lesson plans are designed to be used for grades 5 – 8.
+      %p Matter: anything that occupies space and has mass
       - @sections.zip(['selected']).each do |section, selected|
-        %div{:class => "section #{selected}", :id => section}
-          = render "lessons/electricity/#{section}"
+        %a{ name: section }
+        = render "lessons/matter/#{section}"
 
+    .col-sm-10.col-sm-offset-1
+      #disqus_thread
