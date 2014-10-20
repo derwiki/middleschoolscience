@@ -1,0 +1,15 @@
+= javascript_include_tag "lesson"
+= stylesheet_link_tag "lesson/matter"
+
+-content_for :content do
+  - @sections.zip(['selected']).each do |section, selected|
+    %div{id: section, class: "section #{selected}"}
+      = render "lessons/weather_atmosphere/#{section}"
+  #disqus_thread
+
+-content_for :toc do
+  %ul#section-picker
+    - @sections.each do |section|
+      %li= link_to section.titleize, "#", :"data-section-id" => section
+    %li
+      %a.showall{href: '#'} Show All Sections

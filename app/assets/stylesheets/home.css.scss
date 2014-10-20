@@ -1,0 +1,63 @@
+#home-boxes {
+  color: #eee;
+
+  .row {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+
+  .title {
+    font-size: 26px;
+    padding: 10px 0 0 10px;
+    text-shadow: 2px 2px 5px #333;
+    color: #fefefe;
+  }
+
+  .credit {
+    color: #aaa;
+    font-size: 10px;
+  }
+
+  a {
+    height: 300px;
+  }
+
+  .electricity {
+    background-image: url(image_path('home/lightning.png'));
+    background-size: cover;
+  }
+
+  .matter {
+    background-image: url(image_path('home/plasma.png'));
+    background-size: cover;
+  }
+
+  .rock_cycle {
+    background-image: url(image_path('home/volcano.png'));
+    background-size: cover;
+  }
+
+  .weather_atmosphere {
+    background-image: url(image_path('home/clouds.png'));
+    background-size: cover;
+  }
+
+  .igneous_rock {
+    background-image: url(image_path('home/igneous_rock.jpg'));
+    background-size: cover;
+  }
+
+  .metamorphic_rock {
+    background-image: url(image_path('home/gneiss.jpg'));
+    background-size: cover;
+  }
+}
+
+.header-inner {
+  color: #eee;
+}

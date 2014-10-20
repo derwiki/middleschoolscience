@@ -1,0 +1,57 @@
+.header {
+  background: url(image_path('header.png'));
+  height: 140px;
+
+  a {
+    color: #eee;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .title {
+    font-size: 45px;
+    line-height: 140px;
+
+    a span {
+      font-weight: bold;
+    }
+
+    .tagline {
+      color: #eee;
+      font-size: 16px;
+      letter-spacing: .1em;
+      line-height: 18px;
+      margin-top: -40px;
+      margin-left: 27px;
+      width: 550px;
+    }
+  }
+
+  ul {
+    line-height: 110px;
+    list-style-type: none;
+    font-size: 16px;
+
+    li {
+      display: inline;
+    }
+  }
+}
+
+.content {
+  padding-top: 10px;
+}
+.well.sidebar-nav {
+  position: fixed;
+  right: 20px;
+  top: 165px;
+
+  ul {
+    margin-top: 0;
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}
