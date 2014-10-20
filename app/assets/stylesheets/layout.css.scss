@@ -1,3 +1,16 @@
+.header .title a {
+  color: #eee;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px #333;
+
+  &:hover {
+    color: #ddd;
+  }
+}
+.header .tagline {
+  text-shadow: 2px 2px 5px #333;
+}
+
 .header {
   background: url(image_path('header.png'));
   height: 140px;

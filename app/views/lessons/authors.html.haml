@@ -1,23 +1,26 @@
-= content_for :content do
-  %ul#authors
-    %li
-      %span.author-image
-        = image_tag "authors-ron.jpg", :class => "author"
-      %span.author-bio
-        %b Ron Derewecki
-        earned his Bachelors from West Liberty State College and
-        went on to earn a Masters of Education from Penn State University. He taught
-        science in the Coshocton school district for over 30 years, including operating
-        the planetarium. During his time at Coshocton, he lead many science initiatives
-        including: science fairs, summer science camps, and Space City (a space
-        camp-like simulation for fourth graders, done on a budget).
-    %li
-      %span.author-image
-        = image_tag "authors-adam.jpg", :class => "author"
-      %span.author-bio
-        %b Adam Derewecki
-        (Ron's youngest son and former student) earned his
-        Bachelors in Computer Engineering from Case Western Reserve University.
-        Since graduating, he's worked at numerous software start-ups in San
-        Francisco. His passion for improving the state of the education system
-        drew him to this project.
+.container
+  .row
+    .col-xs-12.text-center
+      %h1 About this site
+
+  .row
+    .col-sm-2.col-sm-offset-1
+      = image_tag "authors-ron.jpg", :class => "author"
+    .col-sm-7.col-sm-offset-1
+      %b Ron Derewecki
+      earned his Bachelors from West Liberty State College and went on to earn
+      a Masters of Education from Penn State University. He taught science in
+      the Coshocton school district for over 30 years, including operating the
+      planetarium. During his time at Coshocton, he lead many science
+      initiatives including: science fairs, summer science camps, and Space
+      City (a space camp-like simulation for fourth graders, done on a budget).
+
+  .row
+    .col-sm-2.col-sm-offset-1
+      = image_tag "authors-adam.jpg", :class => "author"
+    .col-sm-7.col-sm-offset-1
+      %b Adam Derewecki
+      (Ron's youngest son and former student) earned his Bachelors in Computer
+      Engineering from Case Western Reserve University.  Since graduating, he's
+      worked at numerous software start-ups in San Francisco. His passion for
+      improving the state of the education system drew him to this project.
