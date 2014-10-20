@@ -1,6 +1,17 @@
-.container#home-boxes
+.container#introduction
   .row
-    .col-sm-8.col-sm-offset-2
+    .col-sm-8.col-sm-offset-2.well.big-up
+      Welcome to Middle School Science Rocks! Science can be a hard subject
+      to grasp for middle school science students. We hope that you find our
+      notes, diagrams, and Youtube videos helpful.
+
+      .row
+        .col-xs-offset-8.col-xs-1
+          = image_tag 'authors-ron.jpg', style: 'width: 40px; border-radius: 3px'
+        .col-xs-3
+          %div Ron Derewecki
+          %div Science Educator
+.container#home-boxes
   .row
     %a.col-sm-offset-1.col-sm-4.electricity{ href: '/lessons/electricity' }
       .title Electricity

@@ -16,6 +16,26 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.stretch {
-  width: 100%;
+.padding-updown {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.padding-up {
+  margin-top: 10px;
+}
+.padding-down {
+  margin-bottom: 10px;
+}
+.big-up {
+  margin-top: 50px;
+}
+.big-down {
+  margin-bottom: 50px;
+}
+.big-updown {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.underline {
+  border-bottom: 1px #eee solid;
 }
