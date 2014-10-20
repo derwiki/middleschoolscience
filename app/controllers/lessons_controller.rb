@@ -1,4 +1,6 @@
 class LessonsController < ApplicationController
+  respond_to :xml, :html
+
   def electricity
     @sections = %w(what_is_electricity conductors_and_insulators circuits wire
                    switches wire_a_house make_a_motor ac_dc make_a_battery
@@ -41,4 +43,21 @@ class LessonsController < ApplicationController
   def authors
     set_meta title: 'Middle School Science Rocks! About the authors'
   end
+
+  def sitemap
+    @paths = SITEMAP_PATHS
+    respond_to do |format|
+      format.xml { render }
+      format.html { render 'sitemap.xml' }
+    end
+  end
+
+  SITEMAP_PATHS = %w(
+    electricity
+    matter
+    rock_cycle
+    weather_atmosphere
+    igneous_rock
+    metamorphic_rock
+  ).freeze
 end

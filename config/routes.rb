@@ -13,4 +13,5 @@ Rails.application.routes.draw do
     end
   end
   get '/authors' => 'lessons#authors'
+  get '/sitemap.xml' => 'lessons#sitemap'
 end
