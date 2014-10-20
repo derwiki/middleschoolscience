@@ -1,5 +1,10 @@
 #introduction {
   font-size: 18px;
+
+  img {
+    border-radius: 3px;
+    width: 40px;
+  }
 }
 
 #home-boxes {
@@ -17,7 +22,6 @@
 
   .title {
     font-size: 26px;
-    padding: 10px 0 0 10px;
     text-shadow: 2px 2px 5px #333;
     color: #fefefe;
   }
