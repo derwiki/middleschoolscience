@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       get 'weather_atmosphere'
       get 'igneous_rock'
       get 'metamorphic_rock'
+      get 'mineral_identification'
       get 'index'
     end
   end

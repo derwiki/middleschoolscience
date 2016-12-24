@@ -1,0 +1,8 @@
+.container.lesson
+  .row
+    .col-xs-12.text-center
+      %h1 Mineral Identification
+
+    .col-sm-10.col-sm-offset-1
+      - %w(001 002 003 004 005 006 007 008 009 010).each do |image_no|
+        = image_tag "mineral_identification/#{image_no}.jpg"

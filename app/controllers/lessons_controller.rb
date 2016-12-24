@@ -28,8 +28,13 @@ class LessonsController < ApplicationController
   end
 
   def igneous_rock
-    @secionts = []
+    @sections = []
     set_meta title: 'Middle School Science Rocks! Igneous Rocks'
+  end
+
+  def mineral_identification
+    @sections = []
+    set_meta title: 'Middle School Science Rocks! Mineral Identification'
   end
 
   def index
