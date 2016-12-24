@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.3.3'
 
-gem 'rails', '4.2.0.beta2'
+gem 'rails', '4.2.7'
 
 gem 'haml-rails'
 gem 'jquery-rails'
@@ -12,14 +12,6 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'json'
 gem 'meta-tags-helpers'
 gem 'responders', '~> 2.0'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
 
 group :production do
   gem 'pg'
