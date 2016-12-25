@@ -1,8 +1,222 @@
-.container.lesson
+.container.lesson#mineral-identification
   .row
     .col-xs-12.text-center
       %h1 Mineral Identification
 
     .col-sm-10.col-sm-offset-1
-      - %w(001 002 003 004 005 006 007 008 009 010).each do |image_no|
-        = image_tag "mineral_identification/#{image_no}.jpg"
+      %p Each layer of the Earth has a different density
+
+      = image_tag 'mineral_identification/earth_density.jpg'
+
+      %p Thickness of each layer:
+      %ul
+        %li Crust - 5-30 miles
+        %li Mantle - 1800 miles
+        %li Core - 2000 miles
+
+      %h2 Matter of the Lithosphere
+
+      %p Lithosphere: outer portion of the crust
+      %ul
+        %li 2000 Minerals
+        %li 88 Elements
+
+      %p Rock formers: 9 abundant elements in the litosphere
+
+      %p
+        Common elements that make up the minerals of the crust, in decreasing
+        abundance:
+        %ol
+          %li Oxygen
+          %li Silicon
+          %li Aluminum
+          %li Iron
+          %li Calcium
+          %li Sodium
+          %li Potassium
+          %li Magnesium
+          %li Titanium
+
+      %p Organic: Once living; ex: coral, mollusk, shells
+      %p Inorganic: Never living
+
+      %p
+        Minerals..
+        %ul
+          %li are inorganic
+          %li formed in nature
+          %li solids
+          %li have a definite internal atomic pattern
+          %li have a specific chemical composition (compound)
+      %p We can observe the internal atomic pattern by use of X-ray defraction.
+      %p
+        If the arrangement of the molecules is large enough to be recognized by
+        the eye, we call it a Crystal.
+      %p
+        Large crystals are uncommon because when crystals start to form they
+        interfere with each other. Instead of growing into large recognizable
+        crystals, the crystals grow together -- the mineral is said to be
+        massive.
+      %p Mineralogist: a scientist who studies minerals.
+
+      %h2 Groups of Minerals
+      %ol
+        %li
+          %p Silicates
+          %p Si + O -- largest group; 87% of the crust
+        %li
+          %p Carbonates
+          %p C + O
+          %ul
+            %li Ca + C + O2 => CaCO2
+            %li Mg + C + O2 => MgCO2
+            %li Fe + C + O2 => FeCO2
+          %p
+            To test for a carbonate, place a drop of HCl (hydrochloric acid)
+            on the sample. If it fizzes, it's a carbonate.
+        %li
+          %p Oxides
+          %p O2 + some other element, e.g. Fe2O3
+
+      %p Tetrahedron structure: basic unit of all silicates
+      %p Silica is SiO4. The atoms are arranged with Si in the center:
+
+      = image_tag 'mineral_identification/silica.jpg'
+
+      %p Crystal faces: the flat surfaces which join at well defined angles.
+
+      %p The angle between crystal faces is always the same, regardless of size.
+
+      %h2 Identification of Minerals
+      %ol
+        %li
+          %p Luster: the wasy that it reflects light
+          %ol
+            %li Metallic: looks like a metal
+            %li Non-metallic: does not reflect light like a metal
+
+          %p Non-metallic luster terms:
+          %ul
+            %li Adamantine - like a diamond
+            %li Vitreous - like glass
+            %li Greasy
+            %li Pearly
+            %li Silky
+            %li Waxy
+            %li Dull - lacks luster; scatters light
+            %li .. other terms can also be used
+        %li
+          %p Streak: the color of the powdered mineral
+          %p
+            Rub the mineral on a porcelain plate. The color that comes off the
+            mineral is called the streak color.
+
+        = image_tag 'mineral_identification/streak-plate.jpg'
+
+        %li
+          %p Hardness: resistance to being scratched
+          = image_tag 'mineral_identification/materials-needed.jpg'
+
+          %h3 Mohs Scale of Hardness
+          %table.table#mohs-table
+            %thead
+              %tr
+                %th Mohs Scale
+                %th Field Test
+            %tbody
+              %tr
+                %td 1. Talc
+                %td Soft, feels greasy
+                %td= image_tag 'mineral_identification/talc.jpg'
+              %tr
+                %td 2. Gypsum
+                %td Scratched by fingernail
+                %td= image_tag 'mineral_identification/gypsum.jpg'
+              %tr
+                %td 3. Calcite
+                %td Scratched by a penny
+                %td= image_tag 'mineral_identification/calcite.jpg'
+              %tr
+                %td 4. Fluorite
+                %td Easily scratched by a knife blade
+                %td= image_tag 'mineral_identification/fluorite.jpg'
+              %tr
+                %td 5. Apatite
+                %td Scratched by a knife blade with difficulty
+                %td= image_tag 'mineral_identification/apatite.jpg'
+              %tr
+                %td 6. Feldspar
+                %td Scratched by glass
+                %td= image_tag 'mineral_identification/feldspar.jpg'
+              %tr
+                %td 7. Quartz
+                %td Will scratch glass
+                %td= image_tag 'mineral_identification/quartz.jpg'
+              %tr
+                %td 8. Topaz
+                %td Scratches quartz
+                %td= image_tag 'mineral_identification/topaz.jpg'
+              %tr
+                %td 9. Corundum
+                %td Scratches topaz
+                %td= image_tag 'mineral_identification/corundum.jpg'
+              %tr
+                %td 10. Diamond
+                %td Scratches corundum
+                %td= image_tag 'mineral_identification/diamond.jpg'
+
+        %li
+          %p Shape: external appearance
+          %ol
+            %li Amorphous: without a definiate shape, massive
+            %li Crystal: definite geometric pattern; count the number of crystal faces
+
+          %p Some terms that can be used for minerals that have a definite shape:
+          %ul
+            %li Prismatic
+            %li Micaceous
+            %li Acicular
+            %li Pisolitic
+            %li Tabular
+            %li Oolitic
+            %li Fibrous
+
+        %li
+          %p Breakage
+          %ol
+            %li
+              Cleavage: breaks along smooth plane, surfaces that are parallel
+              to the opposite surface: 1-, 2-, or 3- direction cleavage.
+            %li
+              %p Fracture: the broken surfaces are not smooth planes; breakage is irregular.
+              %p Examples: rough, ragged, uneven, conchoidal
+
+        %li
+          %p Specific gravity
+          %p The ratio of the weight of a mineral to the weight of an equal volume of water.
+          %p Specific gravity tells you how many times as heave as water the mineral is
+          %p Specific Gravity = (weight in air) / (loss of weight in water)
+
+        %li
+          %p Color
+          %p The outward color, NOT streak color
+          %p Color is usually not an important quality
+          %p Some minerals vary in color; e.g. quartz can be: clear, white, pink, purple, smokey.
+          %p Many minerals have the same colors or similar colors; e.g. fluorite and quartz can both be purple.
+
+        %li
+          %p Special characteristics
+          %ul
+            %li Taste
+            %li Shape
+            %li Double refraction
+            %li Fluorescence
+            %li Radioactive
+
+        %li
+          %p Transparancey
+          %p The ease with which light will pass through it.
+          %ul
+            %li Transparent: most light passes through
+            %li Opaque: all the light is absorbed or reflected
+            %li Translucent: some light passes through it
