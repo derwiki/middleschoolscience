@@ -21,11 +21,15 @@
     display: inline;
   }
 
-  a:hover {
-    color: #ddd;
-    text-decoration: none;
-  }
 }
+
+a {
+  color: #eee !important;
+}
+a:hover {
+  color: #ccc !important;
+}
+
 .header .tagline {
   text-shadow: 2px 2px 5px #333;
 }
@@ -34,22 +38,11 @@
   background: url(image_path('header.png'));
   min-height: 140px;
 
-  a {
-    color: #eee;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  .title {
-    a span {
-      font-weight: bold;
-    }
+  .title a span {
+    font-weight: bold;
   }
 
   ul {
-//    line-height: 110px;
     list-style-type: none;
     font-size: 16px;
 
