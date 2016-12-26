@@ -11,13 +11,19 @@
   }
 }
 
-.header .title a {
-  color: #eee;
-  text-decoration: none;
-  text-shadow: 2px 2px 5px #333;
+.header {
+  h1 a, h2 {
+    color: #eee;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px #333;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline;
+  }
 
-  &:hover {
+  a:hover {
     color: #ddd;
+    text-decoration: none;
   }
 }
 .header .tagline {
@@ -26,7 +32,7 @@
 
 .header {
   background: url(image_path('header.png'));
-  height: 140px;
+  min-height: 140px;
 
   a {
     color: #eee;
@@ -37,26 +43,13 @@
   }
 
   .title {
-    font-size: 45px;
-    line-height: 140px;
-
     a span {
       font-weight: bold;
-    }
-
-    .tagline {
-      color: #eee;
-      font-size: 16px;
-      letter-spacing: .1em;
-      line-height: 18px;
-      margin-top: -40px;
-      margin-left: 27px;
-      width: 550px;
     }
   }
 
   ul {
-    line-height: 110px;
+//    line-height: 110px;
     list-style-type: none;
     font-size: 16px;
 
