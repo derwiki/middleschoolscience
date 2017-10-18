@@ -27,4 +27,16 @@ module ApplicationHelper
   def neutron
     "n&#8304;".html_safe
   end
+
+  def sub2
+    "₂"
+  end
+
+  def sub3
+    "₃"
+  end
+
+  def bold(s)
+    content_tag(:b, s)
+  end
 end

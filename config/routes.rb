@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       get 'metamorphic_rock'
       get 'mineral_identification'
       get 'index'
+      get :sedimentary_rock
     end
   end
   get '/authors' => 'lessons#authors'

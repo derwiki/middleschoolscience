@@ -54,6 +54,10 @@ class LessonsController < ApplicationController
     @sections = []
   end
 
+  def sedimentary_rock
+    @sections = []
+  end
+
   def index
     set_meta title: <<-EOS.squish
       Middle School Science Rocks!
